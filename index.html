@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>F3EA</title>
+  <script src="libraries/p5.js" type="text/javascript"></script>
+
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="sketch.js" type="text/javascript"></script>
+  <script src="def.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="styles.css" </head>
+
+  <body>
+
+    <h1 id="title">F3EA - Find, Fix, Finish, Exploit, Analyze</h1>
+    <h2 id="subtitle">How surveillance, data analysis, and targetting inform U.S. drone strikes</h2>
+    <h2 id="zoom">Click on a region to zoom | Mouse over to view text</h2>
+    <p id="source">Sources: </p>
+    
+    <a id="dronestream" href="http://dronestre.am/">Dronestream,</a>
+    <a id="intercept" href="https://theintercept.com/">The Intercept,</a>
+    <a id="book" href="http://us.macmillan.com/killchain/andrewcockburn">The Kill Chain,</a>
+    <a id="killchain" href="https://geographicalimaginations.files.wordpress.com/2015/04/scheller-kill-chain.png">Scheller's infographic,</a>
+    <a id="dronewars" href="http://dronewars.net/">dronewars.net,</a>
+    <a id="bij" href="https://www.thebureauinvestigates.com/">The Bureau of Investigative Journalaism,</a>
+    <a id="fp" href="http://foreignpolicy.com/">Foreign Policy,</a>
+    <a id="ianmacky" href="http://ian.macky.net/pat/index.html">images from ian.macky.net</a>
+
+    <p id="DC"><b>The White House: the President and the Cabinet, Washington, DC</b>
+      <br>
+      <br>After Joint Special Operations Command (JSOC) puts together a Joint Priorities Effects List (JPEL, or more simply, kill roster) based on human and technical intelligence--including drone surveillance, phone traffic, and the physical location of
+      cell phones being tracked by satellite--the list is propelled up the chain of command until it reaches the President. Based on a "baseball card" of critical information on the potential target, the President can then decide whether to authorize
+      a 60-day window in which to execute a strike.
+      <br>
+      <br><b>The Cental Intelligence Agency, Langley, VA</b>
+      <br>
+      <br>Nearby, analysts at the C.I.A. link signals intelligence with video and images. The NSA monitors cell phone locations of targets, eavesdrops on conversations, and checks calling patterns. These agencies manage streams of data that include thousands
+      of hours of full-motion video and intercepted calls per day.</p>
+    <p id="FL"><b>Air Force Special Operations Command, Hurlburt Field, Florida</b>
+      <br>
+      <br>One station of the Distributed Common Ground System (DCGS), which theoretically should allow any personnel real-time access to all analysis. Personnel here include intelligence tactical coordinators (ITC), "screeners" that can be either privately
+      contracted civilian employees or air force officers, full-motion video (FMV) analysts who remain in communication with the mission intelligence coordinator in Indian Springs, Nevada, and geo-spacial analysts.</p>
+    <p id="hTX"><b>Texas Air National Guard, Houston, Texas</b>
+      <br>
+      <br>During live operations, pilots guide drones via remote control while sensor operators guide cameras and weapons-targeting lasers and mission intelligence coordinators view live video feed.</p>
+    <p id="sTX"><b>Air Force Intelligence, Surveillance and Reconnaissance Agency, Lackland Air Force Base, San Antonio, Texas</b>
+      <br>
+      <br>During live operations, analysts at the Air Force's intelligence headquarters help guide drone pilots abroad and review surveillance data.
+    </p>
+    <p id="NV"><b>Creech Air Force Base, Indian Springs, Nevada</b>
+      <br>
+      <br>During live operations, pilots guide drones via remote control while sensor operators guide cameras and weapons-targeting lasers. Elsewhere at this command and control facility, a mission intelligence coordinator also views live video feed.</p>
+    <p id="Somalia"><b>Somalia</b>
+      <br>
+      <br>There have been 13 strikes in Somalia since 2011. With little available human intelligence, targeting in Somalia relies heavily on signals intelligence, elecontronic information including cell phone data and images from drones.</p>
+    <p id="Yemen"><b>Yemen</b>
+      <br>
+      <br>There have been 164 strikes in Yemen since 2002. Targeting in Yemen relies heavily on signals intelligence, elecontronic information including cell phone data and images from drones, because human intelligence is scarce and somtimes unreliable.
+    </p>
+    <p id="Iraq"><b>Iraq</b>
+      <br>
+      <br>Drones were used in military operations during the Iraq war, and are still being utilized in the fight against the Islamic State.</p>
+    <p id="Iran"><b>Iran</b>
+      <br>
+      <br>The U.S. conducts surveillance with unarmed drones over Iran.</p>
+    <p id="Afghanistan"><b>Afghanistan</b>
+      <br>
+      <br>Combat using drones with a distinctive element of Operation Enduring Freedom on Afghanistan. Although NATO combat operations have officially ceased, drones continue to be used in strikes. </p>
+    <p id="Pakistan"><b>Pakistan</b>
+      <br>
+      <br>There have been 425 strikes in Pakistan since 2011. The U.S. government and the CIA work with the Pakistan military to conduct reconnaissance and carry out strikes in order to fight the Taliban.</p>
+    <p id="Bosnia"><b>Bosnia</b>
+      <br>
+      <br>The U.S. conducts surveillance with unarmed drones over Bosnia.</p>
+    <p id="DJ"><b>Camp Lemonnier & Chebelley, Djibouti</b>
+      <br>
+      <br>Camp Lemonnier, the only permanent U.S. Military base in Africa, was home to 10 MQ-1 Predator drones, 4 MQ-9 Reaper drones, 6 U-28s, 2 P-3MS, 8XF15E's in 2012, when aircraft were confirmed. Given drones' limiting orbits, it's important to maintain
+      airfields near surveillance and strike areas of interest. The U.S. Military also has operations at a more remote airfield in Chabelley, Djibouti. </p>
+    <p id="bEth"><b>Arba Minch, Ethiopia</b>
+      <br>
+      <br>After being expelled from this air base following a strike in 2007, U.S. Military was granted permission to return in 2011.</p>
+    <p id="bYemen"><b>Al-Anad Air Base, Yemen</b>
+      <br>
+      <br>The U.S. has worked closely with leadership in Yemen to conduct strikes.</p>
+    <p id="bUAE"><b>Al-Dhafra Air Base, United Arab Emirates</b></p>
+    <p id="bQatar"><b>Al-Udeid Air Base, Qatar</b></p>
+    <p id="bAfgh"><b>Jalalabad Airfield, Afghanistan</b>
+      <br>
+      <br>One of several important airfields in Afghanistan, utilized for strikes on the Afghan-Pakistan border.</p>
+    <p id="bTurk"><b>Incirlik, Turkey</b>
+      <br>
+      <br>Air base staffed and utilized by American and Turkish forces, that has been used for reconnaissance in Iraq.</p>
+    <p id="bMor">Not all U.S., NATO, and ally bases are represented, but there are several critical airfields in the Horn of Africa.</p>
+    <p id="bItaly">Not all U.S., NATO, and ally bases are represented, but there are several critical airfields in the Horn of Africa.</p>
+
+    <p id="world">In the U.S. Military, FFF or F3 refers to find, fix, finish: tracking and killing a target. EA, exploit and analyze refers to materials collected or information gathered from detainee interrogations provide additional leads for for the next F3 cycle.
+      <br>
+      <br>Signals intelligence and full motion video captured by surveillance and armed drones are sent to air force bases and intelligence agencies across the U.S. The analysis of these streams of data informs targeting and strikes. Drone pilots are often
+      based in the U.S. although control is sometimes handed off to pilots at a military base in the Middle East or North Africa.
+      <br>
+      <br>Targets are often cell phones.</p>
+    <p id="Germany"><b>Ramstein Air Base, Germany</b>
+      <br>
+      <br>Since 2013, the U.S. Air Force base in Ramstein has been critical relay point for communications between drones operating in the Middle East and Africa and Creech Air Force Base in Nevada. Communications are relayed from drones to Ramstein Air Base
+      via satellite, and then from Ramstein to Creech Air Force Base via undersea cable.</p>
+    <p id="drones">The most common armed drones used for strikes are the Predator and Reaper drones. Predator drones are 27 feet long and are equipped with multiple cameras including infrared. Reaper drones are larger and heavier than Predators and can carry more weapons,
+      but have essentially the same sensors as Predators. Reapers cost $30 million each plus $5 million per year to maintain.
+      <br>
+      <br>The gap between signals represents a true lag in image and information transmission, contrary to the perception of drones providing a high-tech "unblinking eye." Imprecise imagery has been described as “no better than looking at Google Earth through
+      a straw.”</p>
+
+    </p>
+
+  </body>
+
+</html>

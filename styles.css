@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Roboto:500);
+
+h1, h2, h3 {
+  font-family: 'Roboto';
+}
+
+h1 {
+  padding: 20px 0px 0px 0px ;
+  font-size : 22px ;
+}
+
+h2 {
+  padding: 10px 0px 0px 0px ;
+  font-size : 18px ;
+}
+
+/* h3 - currently unused, for city/base headers */
+h3 {
+  padding: 0px 10px 0px 60px ;
+  font-size : 16px ;
+}
+
+html, body {
+  padding: 0px 10px 0px 60px ;
+  font-family: 'Crimson Text';
+  font-size : 16px ;
+	background: #DCDCDC ;
+	min-width: 950px;
+	max-width: 1000px;
+	cursor: crosshair ;
+}
